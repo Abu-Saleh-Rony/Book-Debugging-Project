@@ -142,10 +142,12 @@ const displayCart = () => {
 
 const displayWishlist = () => {
   const wishlist = getWishlistItems();
-  console.log(wishlist);
 
-  bookList.forEach((book) => {
+  const wishlistContainer = document.getElementById("wishlist");
+  wishlistContainer.innerHTML = "";
+
+  wishlist.forEach((book) => {
     const div = createCard(book);
-    document.getElementById("wishlist").appendChild(div);
+    wishlistContainer.appendChild(div);
   });
 };
