@@ -93,7 +93,7 @@ const createCard = (book) => {
 
   let overview = book.overview;
 
-  console.log(book);
+  console.log(overview);
 
   div.innerHTML = `
   <div class="image-container">
@@ -109,7 +109,7 @@ const createCard = (book) => {
   <div class="info-container">
     <h1>${book.name}</h1>
     <p>
-      ${overview}
+      ${overview.slice(0, 70)}...
     </p>
   </div>
 
