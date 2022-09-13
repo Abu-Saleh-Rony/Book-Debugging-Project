@@ -93,10 +93,12 @@ const createCard = (book) => {
 
   let overview = book.overview;
 
+  console.log(book);
+
   div.innerHTML = `
   <div class="image-container">
     <img
-      src="${book.Image}"
+      src="${book.image}"
       alt=""
     />
     <div class="button-container">
